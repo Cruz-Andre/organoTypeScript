@@ -1,6 +1,6 @@
 import './Formulario.css'
 import { useState } from 'react'
-import CampoTexto from '../CampoTexto/CampoTexto.js'
+import CampoTexto from '../CampoTexto/CampoTexto'
 import ListaSuspensa from '../ListaSuspensa/ListaSuspensa.js'
 import Botao from '../Botao/Botao.tsx'
 

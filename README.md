@@ -13,7 +13,10 @@
 - Aplicar as configurações do jsx; :white_check_mark:
 - Diferenciar arquivos js, jsx, ts e tsx. :white_check_mark:
 ### Aula 2:
-- 
+- Configurar o jsx no tsconfig.json; :white_check_mark:
+- Configurar a tipagem de funções; :white_check_mark:
+- Inferir os tipos de variáveis geradas pela desconstrução das props; :white_check_mark:
+- Para que servem pacotes dentro do escopo @types. :white_check_mark:
 ### Aula 3:
 - 
 ### Aula 4:

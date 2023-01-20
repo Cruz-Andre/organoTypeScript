@@ -54,8 +54,15 @@ function App() {
 
   return (
     <div className="App">
-      <Banner urlImagem='/imagens/banner.png' textoAlt='O banner principal da página do Organo'/>
-      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado = {colaborador => aoNovoColaboradorAdcicionado(colaborador)}/>
+      <Banner 
+        urlImagem='/imagens/banner.png' 
+        textoAlt='O banner principal da página do Organo'
+      />
+
+      <Formulario 
+        times={times.map(time => time.nome)} 
+        aoColaboradorCadastrado = {colaborador => aoNovoColaboradorAdcicionado(colaborador)}
+      />
       
       {times.map(time => <Time 
         key={time.nome} 
