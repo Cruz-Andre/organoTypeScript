@@ -18,7 +18,11 @@
 - Inferir os tipos de variáveis geradas pela desconstrução das props; :white_check_mark:
 - Para que servem pacotes dentro do escopo @types. :white_check_mark:
 ### Aula 3:
-- 
+- Criar interfaces; :white_check_mark:
+- Entender a diferença entre type e Interface; :white_check_mark:
+- Configurar propriedades opcionais nas interfaces; :white_check_mark:
+- Tipar funções; :white_check_mark:
+- Configurar o jsx no tsconfig.json. :white_check_mark:
 ### Aula 4:
 - 
 ### Aula 5:

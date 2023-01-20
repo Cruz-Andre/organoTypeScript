@@ -1,7 +1,14 @@
 import './Colaborador.css'
 
+interface ColaboradorProps {
+    nome: string
+    imagem: string
+    cargo: string
+    corDoCard: React.CSSProperties
+}
+
 // por desestruturação, mais legivel que props
-const Colaborador = ({nome, imagem, cargo, corDoCard}) => {
+const Colaborador = ({nome, imagem, cargo, corDoCard}: ColaboradorProps) => {
     return (
         <div className='colaborador'>
             <div className='cabecalho' style={corDoCard}>
