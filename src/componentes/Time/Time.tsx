@@ -27,6 +27,7 @@ const Time = (props: TimeProps) => {
 						cargo={colaborador.cargo}
 						imagem={colaborador.imagem}
 						corDoCard={corDoCard}
+						data={colaborador.data}
 					/>
 				)}
 			</div>

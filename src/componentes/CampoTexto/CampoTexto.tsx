@@ -6,10 +6,11 @@ interface CampoTextoProps {
     valor: string
     obrigatorio?: boolean
     placeholder: string
+    tipo?: React.HTMLInputTypeAttribute
 }
 
 // Montagem da estrutura com uma const e arrow function e a desestruturação da interface CompoTextoProps
-const CampoTexto = ({aoAlterado, label, obrigatorio = false, placeholder, valor}: CampoTextoProps) => {
+const CampoTexto = ({aoAlterado, label, obrigatorio = false, placeholder, valor, tipo}: CampoTextoProps) => {
     
     /*concatenação de textos e template string
     const placeholderModificada = `${props.placeholder}...`*/
@@ -25,7 +26,9 @@ const CampoTexto = ({aoAlterado, label, obrigatorio = false, placeholder, valor}
                 value={valor} 
                 onChange={aoDigitado} 
                 required={obrigatorio} 
-                placeholder={placeholder}/>
+                placeholder={placeholder}
+                type={tipo}
+            />
             {/* concatenação de textos e template string
             <input placeholder={placeholderModificada}/> */}
         </div>

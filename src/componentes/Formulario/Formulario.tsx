@@ -17,21 +17,24 @@ const Formulario = (props: FormularioProps) => {
 	const [cargo, setCargo] = useState('')
 	const [imagem, setImagem] = useState('')
 	const [time, setTime] = useState('')
-
+	const [data, setData] = useState('')
+	
 	const aoSalvar = (evento: React.FormEvent<HTMLFormElement>) => {
 		evento.preventDefault()
 		props.aoColaboradorCadastrado({
 			nome,
 			cargo,
 			imagem,
-			time //Então teremos que ir à interface IColaborador em "src > compartilhado > interfaces > IColaborador.ts" e adicionar um time: Mas deveremos tomar cuidado, pois se no outro momento não tínhamos o time, isso quer dizer que pode ser opcional com a adição de uma interrogação, além de ser uma string.
+			time, //Então teremos que ir à interface IColaborador em "src > compartilhado > interfaces > IColaborador.ts" e adicionar um time: Mas deveremos tomar cuidado, pois se no outro momento não tínhamos o time, isso quer dizer que pode ser opcional com a adição de uma interrogação, além de ser uma string.
+			data
 		})
 		setNome('')
 		setCargo('')
 		setImagem('')
 		setTime('')
+		setData('')
 	}
-
+	
 	return (
 		<section className="formulario">
 			<form onSubmit={aoSalvar}>
@@ -49,6 +52,14 @@ const Formulario = (props: FormularioProps) => {
 					placeholder="Digite seu cargo"
 					valor={cargo}
 					aoAlterado={valor => setCargo(valor)}
+				/>
+				<CampoTexto
+					obrigatorio={true}
+					label="Data de entrada no time"
+					placeholder=""
+					valor={data}
+					aoAlterado={valor => setData(valor)}
+					tipo='date'
 				/>
 				<CampoTexto
 					label="Imagem"
