@@ -24,7 +24,9 @@
 - Tipar funções; :white_check_mark:
 - Configurar o jsx no tsconfig.json. :white_check_mark:
 ### Aula 4:
-- 
+- Explicitar que uma expressão que pode ser nula tem, de fato, algum valor; :white_check_mark:
+- Utilizar fragmentos React; :white_check_mark:
+- Trabalhar com múltiplos tipos para uma mesma prop. :white_check_mark:
 ### Aula 5:
 - 
 
