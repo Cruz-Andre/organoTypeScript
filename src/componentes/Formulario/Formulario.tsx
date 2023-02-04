@@ -34,7 +34,8 @@ const Formulario = (props: FormularioProps) => {
 		setTime('')
 		setData('')
 	}
-	
+	console.log(data)
+	console.log(new Date()[Symbol.toPrimitive]('string'))
 	return (
 		<section className="formulario">
 			<form onSubmit={aoSalvar}>

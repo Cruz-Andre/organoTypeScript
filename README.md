@@ -28,7 +28,9 @@
 - Utilizar fragmentos React; :white_check_mark:
 - Trabalhar com múltiplos tipos para uma mesma prop. :white_check_mark:
 ### Aula 5:
-- 
+- Refatorar componentes, adicionando novas funcionalidades; :white_check_mark:
+- Entender as vantagens e desvantagens do TypeScript; :white_check_mark:
+- Configurar regras no tsconfig.json. :white_check_mark:
 
 
 # Getting Started with Create React App

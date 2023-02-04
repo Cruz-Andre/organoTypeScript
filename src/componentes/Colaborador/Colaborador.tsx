@@ -7,9 +7,9 @@ interface ColaboradorProps {
     corDoCard: React.CSSProperties
     data: string
 }
-
 // por desestruturação, mais legivel que props
 const Colaborador = ({nome, imagem, cargo, corDoCard, data}: ColaboradorProps) => {
+
     return (
         <div className='colaborador'>
             <div className='cabecalho' style={corDoCard}>
@@ -18,7 +18,7 @@ const Colaborador = ({nome, imagem, cargo, corDoCard, data}: ColaboradorProps) =
             <div className='rodape'>
                 <h4>{nome}</h4>
                 <h5>{cargo}</h5>
-                <h5>{new Date(data).toLocaleDateString()}</h5>
+                <h5>No time desde: {new Date(data).toLocaleDateString('pt-BR', {timeZone: 'UTC'})}</h5>
             </div>
         </div>
     )
